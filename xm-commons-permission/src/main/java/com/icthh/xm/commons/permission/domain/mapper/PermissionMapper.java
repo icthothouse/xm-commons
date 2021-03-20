@@ -59,7 +59,11 @@ public class PermissionMapper {
      * @param yml    string
      * @param msName service name
      * @return permissions map
+     *
+     * @deprecated use PermissionMappingService.ymlToPermissions instead
+     *
      */
+    @Deprecated(forRemoval = true)
     public Map<String, Permission> ymlToPermissions(String yml, String msName) {
         Map<String, Permission> result = new TreeMap<>();
         try {
